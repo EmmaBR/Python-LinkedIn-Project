@@ -10,13 +10,9 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 driver = webdriver.Chrome() 
 
-# HI SAMI! 
 # make sure to hard code your job interest in title variable below
 # also hard code your login information (email and password)
 # to stop running the code: in the terminal type type contol + c (if on a mac)
-# if you ever have any questions running the code just message me on facebook!
-# Good luck with your job searches!
-# - Emma Rivera 
 
 title = "" 
 title.replace(' ', '%20')
@@ -24,10 +20,9 @@ title.replace(' ', '%20')
 page = driver.get('https://www.linkedin.com/jobs/search/?f_LF=f_AL&keywords={}&location=United%20States&locationId=us%3A0'.format(title))
 
 def login():
-#    userEmail = input('Enter your email: ')
-#    userPassword = input('Enter your password')
-   userEmail = 'samikhan56@gmail.com' 
-   userPassword = 'Powerfireball1'
+	
+   #userEmail = '' 
+   #userPassword = ''
    
    signIn = '//*[@id="mobile-chrome"]/nav/div/ul/li[1]/a'
    driver.find_element_by_xpath(signIn).click()
